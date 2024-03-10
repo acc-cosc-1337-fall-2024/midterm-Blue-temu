@@ -8,5 +8,9 @@ TEST_CASE("Verify Test Configuration", "verification") {
 
 TEST_CASE("test")
 {
-	REQUIRE(test_config() == true);
+	
+	REQUIRE(get_factorial_sequence(3) == 6);
+	REQUIRE(get_factorial_sequence(4) == 24);
+	REQUIRE(get_factorial_sequence(5) == 120);
+	REQUIRE(get_factorial_sequence(6) == 720);
 }
